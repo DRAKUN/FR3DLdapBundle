@@ -13,7 +13,7 @@ fr3d_ldap:
         accountDomainNameShort: LOCAL
        
     user:
-        baseDn: dc=local,dc=example,dc=com
+        baseDn: DC=local,DC=example,DC=com
         filter: (&(ObjectClass=Person))
         attributes:
             - { ldap_attr: samaccountname,  user_method: setUsername }
